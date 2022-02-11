@@ -121,5 +121,4 @@ view: users {
     drill_fields: [id, first_name, last_name, orders.count]
   }
 
-
 }

@@ -101,7 +101,7 @@ view: users {
 
   dimension: full_name {
     type: string
-    sql: conact(concat(${first_name},' '),${last_name}) ;;
+    sql: conact(${first_name}," ",${last_name}) ;;
   }
 
   dimension: :full_name_length {
@@ -121,9 +121,5 @@ view: users {
     drill_fields: [id, first_name, last_name, orders.count]
   }
 
-  measure: average_user_age{
-    type: average
-    sql: ${age} ;;
-  }
 
 }

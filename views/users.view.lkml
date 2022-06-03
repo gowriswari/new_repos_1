@@ -105,7 +105,7 @@ view: users {
     sql: CONCAT(CONCAT(${first_name},' '),${last_name}) ;;
   }
 
-  dimension: :full_name_length {
+  dimension:full_name_length {
     type: number
     sql: length(${full_name}) ;;
   }
